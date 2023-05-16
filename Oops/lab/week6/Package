@@ -1,0 +1,76 @@
+//Write a Java Program to create a Package for three classes Add, Sub, Mul
+
+To create a package for three classes (Add, Sub, Mul) in Java, you need to follow these steps:
+
+Create a directory with the desired package name. For example, let's use the package name "mathoperations".
+
+Inside the "mathoperations" directory, create three Java files: "Add.java", "Sub.java", and "Mul.java".
+
+Define the package name at the top of each Java file using the package keyword followed by the package name. For example, package mathoperations;.
+
+Write the code for each class in their respective Java files.
+
+Here's an example implementation:
+
+Step 1: Create a directory structure:
+
+- mathoperations
+  |- Add.java
+  |- Sub.java
+  |- Mul.java
+
+Step 2: Write the code for each class:
+
+Add.java:
+
+package mathoperations;
+
+public class Add {
+    public static int perform(int a, int b) {
+        return a + b;
+    }
+}
+
+public class Sub {
+    public static int perform(int a, int b) {
+        return a - b;
+    }
+}
+
+package mathoperations;
+
+public class Mul {
+    public static int perform(int a, int b) {
+        return a * b;
+    }
+}
+
+**** Main program *****
+
+import mathoperations.Add;
+import mathoperations.Sub;
+import mathoperations.Mul;
+
+public class Main {
+    public static void main(String[] args) {
+        int a = 5;
+        int b = 3;
+
+        int sum = Add.perform(a, b);
+        int difference = Sub.perform(a, b);
+        int product = Mul.perform(a, b);
+
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+    }
+}
+
+
+**    **   CMD **************
+javac mathoperations/*.java
+javac Main.java
+java Main
+
+
+

@@ -24,7 +24,7 @@ class Dog implements Pet {
 }
 
 // Main class to test the implementation
-public class Main {
+public class AnimalMain {
     public static void main(String[] args) {
         // Creating an instance of Dog
         Dog dog = new Dog();
